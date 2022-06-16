@@ -1,0 +1,366 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+}
+.bdr {
+  border: 1px solid black;
+}
+body {
+  background: url(./img/bg-8.png);
+  backdrop-filter: blur(1px);
+  color: black;
+}
+h1 {
+  font-size: 30px;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+header,
+footer {
+  width: 82%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 5px;
+  height: 20px;
+}
+header{
+  width: 90%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  /* align-items: center; */
+}
+nav a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: 700;
+  font-size: 15px;
+  height: 35px;
+  width: 70px;
+}
+nav a:hover{
+  color: red;
+  font-size: 18px;
+}
+.alinks{
+  display: none;
+  position: absolute;
+  right: 10%;
+  top: 100%;
+  width: 50%;
+  border-radius: 5px;
+  background: hsl(212, 45%, 89%);
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.iconlinks{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+main {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+p strong {
+  font-size: 20px;
+}
+.int {
+  font-weight: 500;
+  color: black;
+}
+.desc {
+  font-size: 16px;
+}
+.mobile-hidden-img {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.mobile-hidden-img img {
+  width: 230px;
+  height: 230px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+.story hr {
+  width: 82%;
+  border: 1px solid red;
+  animation-name: rule;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  margin-bottom: 5px;
+}
+.anime figure {
+  display: none;
+}
+.anime figcaption{
+  width: 100%;
+  height: 33px;
+}
+
+.subdiv {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+@keyframes rule {
+  0% {
+    width: 1%;
+  }
+  100% {
+    width: 82%;
+  }
+}
+.anime {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cont {
+  width: 100%;
+  height: 33px;
+}
+button {
+  width: 100%;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 700;
+  outline: 0;
+  border: 0;
+  height: 30px;
+  font-size: 18px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+button:hover {
+  font-size: 23px;
+  height: 32px;
+  color: red;
+}
+a button{
+  font-size: 16px;
+  padding: 2px;
+  width: 100%;
+  color: white;
+  background: red;
+  outline: 0;
+  border: 0;
+}
+
+a button:hover{
+  color: white;
+  font-size: 20px;
+}
+.ul-hobbies,
+.ul-capabilities,
+.ul-interests {
+  display: none;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 7px;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+}
+.hobbies,
+.capabilities,
+.interests {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 100%;
+}
+.contact button{
+  border: 0;
+  color: red;
+  background: transparent;
+  font-size: 22px;
+}
+.contact button:hover{
+  font-size: 24px;
+  color:red;
+}
+i {
+  font-size: 18px;
+  color: black;
+}
+i:hover {
+  font-size: 22px;
+  color: red;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+footer strong {
+  font-size: 15px;
+}
+footer span {
+  display: flex;
+}
+.footer-icon {
+  margin-left: 10px;
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 728px) {
+  h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+  header,
+  footer {
+    width: 82%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 5px;
+    height: 20px;
+  }
+  header{
+    width: 70%;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  a button{
+    background: red;
+  }
+  nav a:hover{
+    font-size: 20px;
+  }
+  .alinks{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background: transparent;
+    justify-content: space-between;
+    position:static;
+  }
+  .iconlinks{
+    display: none;
+  }
+  main {
+    margin-top: 10px;
+    padding: 0px;
+  }
+  .main {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "story anime";
+    grid-column-gap: 20px;
+  }
+  .subdiv {
+    margin-top: 30px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(50px, auto);
+  }
+  .anime,
+  .story {
+    padding: 20px;
+  }
+  p strong {
+    margin-top: 0;
+  }
+  .anime {
+    grid-area: anime;
+  }
+  .anime figure {
+    display: block;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  figcaption {
+    margin-top: 10px;
+  }
+  .anime img {
+    /* margin-top: 30px; */
+    width: 320px;
+    height: 350px;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+  .story {
+    grid-area: story;
+    display: block;
+    text-align: left;
+  }
+  .story h1 {
+    margin-top: 30px;
+  }
+  .story hr {
+    width: 78%;
+    margin-bottom: 10px;
+  }
+  @keyframes rule {
+    0% {
+      width: 1%;
+    }
+    100% {
+      width: 78%;
+    }
+  }
+  .desc {
+    margin-top: 30px;
+  }
+  .contact{
+    display: none;
+  }
+  .hobbies,
+  .capabilities,
+  .interests {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* text-align: center;
+    justify-content: center;
+    align-items: center; */
+  }
+  .mobile-hidden-img {
+    display: none;
+  }
+  ul li {
+    margin-top: 10px;
+  }
+  .footer-icon {
+      width: 40px;
+  }
+}

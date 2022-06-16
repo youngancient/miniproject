@@ -1,0 +1,305 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  /* box-sizing: border-box; */
+}
+body {
+  background: url(../img/bg-8.png);
+  backdrop-filter: blur(1px);
+}
+header,
+footer {
+  width: 82%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 5px;
+  height: 20px;
+}
+header {
+  width: 90%;
+}
+.bdr{
+  border: 1px solid black;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  /* align-items: center; */
+}
+nav a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: 700;
+  font-size: 15px;
+  height: 35px;
+  width: 70px;
+}
+nav a:hover {
+  color: red;
+  font-size: 18px;
+}
+.alinks {
+  display: none;
+  position: absolute;
+  right: 10%;
+  top: 110%;
+  width: 50%;
+  border-radius: 5px;
+  background: hsl(212, 45%, 89%);
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.iconlinks {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+main {
+  width: 100%;
+  /* height: 100vh; */
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.login-main{
+  margin-top: 0;
+  height: 100vh;
+}
+input, .dropdown {
+  background: hsl(212, 45%, 89%);
+  margin-top: 5px;
+  height: 20px;
+  width: 300px;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+.dropdown{
+  height: 40px;
+}
+.spaced select, option{
+  cursor: pointer;
+}
+.spaced select{
+  width: 320px;
+}
+input[type="password"] {
+  font-family: Verdana;
+}
+.header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header h4 {
+  margin-top: 5px;
+  color: rgb(10, 10, 119);
+}
+.header hr {
+  width: 65%;
+  border: 1px solid red;
+  animation-name: rule;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  margin-bottom: 5px;
+}
+@keyframes rule {
+  0% {
+    width: 1%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+.form {
+  background: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 2px hsl(212, 6%, 54%);
+  width: 100vw;
+}
+form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.spaced {
+  margin-top: 20px;
+}
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+button {
+  outline: 0;
+  border: 0;
+  background: red;
+  height: 35px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  width: 100%;
+  cursor: pointer;
+  letter-spacing: 3px;
+}
+form button{
+  margin-top: 30px;
+  font-size: 12px;
+  border-radius: 10px;
+}
+.bdr {
+  border: 1px solid black;
+}
+i {
+  font-size: 18px;
+  color: black;
+}
+i:hover {
+  font-size: 22px;
+  color: red;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+footer strong {
+  font-size: 15px;
+}
+footer span {
+  display: flex;
+}
+.footer-icon {
+  margin-left: 10px;
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 430px) and (max-width: 728px) {
+  .form{
+    width: auto;
+  }
+  button{
+    width: 97%;
+  }
+  button:hover {
+    font-size: 17px;
+    width: 100%;
+  }
+  form button:hover {
+    font-size: 15px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 728px) {
+  header,
+  footer {
+    width: 82%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 5px;
+    height: 20px;
+  }
+  header {
+    width: 70%;
+  }
+  .form{
+    width: auto;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* a button{
+    background: red;
+  } */
+  nav a:hover {
+    font-size: 20px;
+  }
+  .horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .alinks {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background: transparent;
+    justify-content: space-between;
+    position: static;
+  }
+  .iconlinks {
+    display: none;
+  }
+  main {
+    margin-top: 80px;
+    padding: 10px;
+  }
+  .footer-icon {
+    width: 40px;
+  }
+  .register hr {
+    width: 65%;
+    margin-bottom: 10px;
+  }
+  @keyframes rule {
+    0% {
+      width: 1%;
+    }
+    100% {
+      width: 65%;
+    }
+  }
+  .horizontal .right {
+    margin-left: 10px;
+  }
+  .spaced input {
+    width: 350px;
+  }
+  .spaced select{
+    width: 370px;
+  }
+  .horizontal input {
+    width: 160px;
+  }
+  .login input{
+      width: 350px;
+  }
+  button{
+    width: 97%;
+  }
+  button:hover {
+    font-size: 17px;
+    width: 100%;
+  }
+  form button:hover {
+    font-size: 15px;
+    width: 100%;
+  }
+}
